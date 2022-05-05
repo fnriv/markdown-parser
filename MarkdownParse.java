@@ -28,12 +28,12 @@ public class MarkdownParse {
             int closeParen = markdown.indexOf(")", closeBracketAndOpenParentheses);
             if(closeParen < 0){break;}
             System.out.println("substring: " + markdown.substring(closeBracketAndOpenParentheses + 2, closeParen));
-            if(markdown.substring(closeBracketAndOpenParentheses + 2, closeParen).contains(" ")){
-                break;
-            }
-            else{
+            // if(markdown.substring(closeBracketAndOpenParentheses + 2, closeParen).contains(" ")){
+            //     break;
+            // }
+            //else{
                 toReturn.add(markdown.substring(closeBracketAndOpenParentheses + 2, closeParen));
-            }
+            //}
             currentIndex = closeParen + 1;
         
         }
