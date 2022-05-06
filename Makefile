@@ -1,8 +1,8 @@
-MarkdownParse.class: MarkdownParse.java
-	javac MarkdownParse.java
+# MarkdownParse.class: MarkdownParse.java
+# 	javac MarkdownParse.java
 
-run: MarkdownParse.class
-	java MarkdownParse test-file.md
+# run: MarkdownParse.class
+# 	java MarkdownParse test-file.md
 
 
 test: MarkdownParseTest.java

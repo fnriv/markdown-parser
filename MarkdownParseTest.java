@@ -101,4 +101,6 @@ public class MarkdownParseTest {
         assertEquals(List.of("some-thing.html"), MarkdownParse.getLinks(mdFile));
     }
 
+    System.out.println("New change test yayay!!");
+
 }
