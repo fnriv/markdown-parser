@@ -99,8 +99,9 @@ public class MarkdownParseTest {
         Path filepath = Path.of("test-file9.md");
         String mdFile = Files.readString(filepath);
         assertEquals(List.of("some-thing.html"), MarkdownParse.getLinks(mdFile));
+        System.out.println("New change test yayay!!");s
     }
 
-    System.out.println("New change test yayay!!");
+    
 
 }
