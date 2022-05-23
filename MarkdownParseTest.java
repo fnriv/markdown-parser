@@ -99,9 +99,13 @@ public class MarkdownParseTest {
         Path filepath = Path.of("test-file9.md");
         String mdFile = Files.readString(filepath);
         assertEquals(List.of("some-thing.html"), MarkdownParse.getLinks(mdFile));
-        System.out.println("New change test yayay!!");
     }
 
-    
+    @Test
+    public void getLinksSnippet1() throws IOException{
+        Path filepath = Path.of("testSnippet1.md");
+        String mdFile = Files.readString(filepath);
+        assertEquals(List.of("google.com"), MarkdownParse.getLinks(mdFile));
+    }
 
 }
